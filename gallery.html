@@ -9,6 +9,7 @@
             margin: 0px;
             padding: 0px;
             position: relative;
+            overflow-x: hidden;
         }
 
         html,
@@ -52,14 +53,6 @@
             height: 100%;
         }
 
-
-        .two-col {
-            display: grid;
-            grid-template-columns: 2fr 8fr;
-            background-color: #FFF;
-            grid-column-gap: 1em;
-        }
-
         .c1 {
             min-width: 200px;
         }
@@ -67,6 +60,13 @@
         .c1,
         .c3 {
             background-color: #f4f4f4;
+        }
+
+        .three-col {
+            display: grid;
+            grid-template-columns: 2fr 8fr 3fr;
+            background-color: #FFF;
+            grid-column-gap: 1em;
         }
 
         .txt-center {
@@ -99,9 +99,14 @@
             background-color: #8d8c8c;
         }
 
-        /* C2 - Contact Form */
+        /* C2 - Product Grid */
         .c2 {
-            padding: 2em;
+            display: grid;
+            /* Makes 4 cols, equal width */
+            grid-template-columns: repeat(4, 1fr);
+            /* auto rows makes it not take up the whole container */
+            grid-auto-rows: min-content;
+            grid-gap: 1em;
         }
 
         .h2-content {
@@ -112,30 +117,21 @@
 
         .c2>img {
             width: 100%;
-            object-fit: cover;
-            height: auto;
             align-self: center;
             max-height: 130px;
         }
 
-        /* Contact Form */
-        .contact-form {
-            width: 500px;
-            height: 500px;
-            margin: 100px, auto;
+        .c2-first-row {
+            /* Span across top row */
+            grid-column: 1/5;
         }
 
-        .contact-input {
-            width: 91%;
-            padding: 15px;
-            margin: 5px;
-        }
-
-        .submit-button {
-            padding: 10px 25px;
+        .grid-button {
+            padding: 6px 12px;
             background-color: #ccc;
             float: right;
-            margin-top: 12px;
+            display:block;
+            margin-bottom: 15px;
         }
     </style>
 </head>
@@ -144,36 +140,44 @@
     <div class="r1 box-shadow">
         <h2>Isavel Papa</h2>
     </div>
-    <div class="r2 two-col">
+    <div class="r2 three-col">
         <div class="c1 box-shadow">
             <h2 class="txt-center">Navigation</h2>
-            <div>
-                <ul class="left-nav">
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./about.html">About</a></li>
-                    <li><a href="./contact-us.html">Contact</a></li>
-                    <li><a href="./gallery.html">Gallery</a></li>
-                    <li><a href="./login.html">Login</a></li>
-                </ul>
-            </div>
+            <ul class="left-nav">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./contact-us.html">Contact</a></li>
+                <li><a href="./gallery.html">Gallery</a></li>
+                <li><a href="./login.html">Login</a></li>
+            </ul>
         </div>
-        <!-- C2: contact form -->
         <div class="c2">
-            <h2>Contact Us</h2>
-            <form class="contact-form">
-                <input placeholder="First Name" type="text" id="first-name" class="contact-input">
-                <input placeholder="Last Name" type="text" id="last-name" class="contact-input">
-                <input placeholder="Email" type="email" id="email" class="contact-input">
-                <button onclick="contact.goToHome()" type="submit" class="submit-button">Submit</button>
-            </form>
+            <div class="c2-first-row">
+                <a href="./gallery-table.html" class="grid-button">Grid View</a>
+                    <h2 class="txt-center h2-content">Gallery</h2>
+            </div>
+            <img class="box-shadow" src="./img/1.jpg">
+            <img class="box-shadow" src="./img/2.jpg">
+            <img class="box-shadow" src="./img/3.jpg">
+            <img class="box-shadow" src="./img/4.jpg">
+            <img class="box-shadow" src="./img/5.jpg">
+            <img class="box-shadow" src="./img/6.jpg">
+            <img class="box-shadow" src="./img/7.jpg">
+            <img class="box-shadow" src="./img/8.jpg">
+            <img class="box-shadow" src="./img/9.jpg">
+            <img class="box-shadow" src="./img/10.jpg">
+            <img class="box-shadow" src="./img/11.jpg">
+            <img class="box-shadow" src="./img/12.jpg">
+
         </div>
+        <div class="c3 box-shadow">
+            <h2 class="txt-center">Recent Products</h2>
         </div>
     </div>
 
     <div class="r3 box-shadow">
         Copyright © 2019. Created by Isavel Papa
     </div>
-    <script type="text/javascript" src="./js/contact.js"></script>
 </body>
 
 </html>
