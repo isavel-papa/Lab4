@@ -1,0 +1,158 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+}
+
+html,
+body {
+    height: 100vh;
+    width: 100vw;
+    font-family: cursive;
+    font-style: italic;
+    overflow-x: hidden;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.box-shadow {
+    -webkit-box-shadow: 0px 1px 9px -1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 1px 9px -1px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 1px 9px -1px rgba(0, 0, 0, 0.75);
+}
+
+.login-container-grid {
+    display: grid;
+    grid-template-rows: 1fr 13fr 1fr;
+    grid-row-gap: 1em;
+    height: 100%
+}
+
+.r1,
+.r3 {
+    display: grid;
+    background-color:	#453716;
+    align-items: center;
+    color: #FFFEFB;
+}
+
+.r3 {
+    text-align: center;
+    padding:1em;
+}
+
+.r2 {
+    background-color: #DFD9C1;
+    height: 100%;
+}
+
+
+.one-col {
+    display: grid;
+    background-color: #DFD9C1;
+    grid-column-gap: 1em;
+}
+
+.c1 {
+    min-width: 200px;
+}
+
+.c1,
+.c3 {
+    background-color: #f4f4f4;
+}
+
+.txt-center {
+    text-align: center;
+    margin: 15px auto 0px;
+    border-bottom: 1px solid #a8a7a7;
+    padding-bottom: 15px;
+}
+
+.top-logo {
+    height:40px;
+    padding: 3px;
+    float: left;
+}
+
+.top-name {
+    display: block;
+    padding: 3px 0px 3px 5px;
+    font-size: 25px;
+    float: left;
+    width: 25%;
+    align-self: center;
+    text-align: left;
+}
+
+/* C2 - Login Form */
+.c2 {
+    padding: 2em;
+    margin: auto;
+}
+
+.h2-content {
+    grid-column: 1/5;
+    height: 22px;
+    width: 100%;
+}
+
+.logo {
+    margin-left:auto;
+    margin-right: auto;
+    display:block;
+    width:98%;
+    height:300px;
+}
+
+/* Login Components */
+.login-form {
+    width: 500px;
+    height: 500px;
+    margin: 100px, auto;
+}
+
+.login-input {
+    width: 91%;
+    padding: 15px;
+    margin: 5px;
+    color:rgb(211, 158, 51);
+}
+
+::placeholder {
+    color:rgb(211, 158, 51);
+}
+
+.login-input:hover, .login-input:focus {
+    outline: none;
+    border: 2px solid #453716;
+    border-radius: 4px;
+}
+
+
+.submit-button {
+    padding: 10px 25px;
+    background-color: #453716;
+    float: right;
+    margin-top: 12px;
+    color:#FFFEFB;
+    font-family:cursive;
+    font-style: italic;
+    border-radius: 12px;
+    transition-duration: 0.2s;
+}
+
+.submit-button:hover {
+    background-color: rgb(211, 158, 51);
+}
+
+.error-message {
+    color: darkred;
+    display: block;
+    margin-top: 5px;
+    padding: 7px;
+    display: none;
+}
