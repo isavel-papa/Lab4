@@ -3,19 +3,22 @@
 <html>
 
 <head>
-    <title>Assignment #4</title>
+    <title>Gatastico Pet Shop</title>
+    <link rel="icon" href="./img/sm_favicon.png">
+    <!-- <link rel="stylesheet" href="./css/about.css"> -->
     <style>
         * {
             margin: 0px;
             padding: 0px;
             position: relative;
-            /* overflow-x: hidden; */
         }
 
         html,
         body {
             height: 100vh;
             width: 100vw;
+            font-family: cursive;
+            overflow-x: hidden;
         }
 
         p {
@@ -33,6 +36,12 @@
             box-shadow: 0px 1px 9px -1px rgba(0, 0, 0, 0.75);
         }
 
+        .center {
+           text-align: center;
+           align-self: center;
+           font-style: italic;
+        }
+
         .main-container-grid {
             display: grid;
             grid-template-rows: 1fr 13fr 1fr;
@@ -43,18 +52,36 @@
         .r1,
         .r3 {
             display: grid;
-            background-color: #ccc;
+            background-color: #453716;
             padding: 1em;
             align-items: center;
+            color: #FFFEFB;
         }
 
         .r2 {
-            background-color: #f1f1f1;
+            background-color: #DFD9C1;
             height: 100%;
         }
 
         .r3 {
             text-align: center;
+            padding: 1em;
+        }
+
+        .top-logo {
+            height: 40px;
+            padding: 3px;
+            float: left;
+        }
+
+        .top-name {
+            display: block;
+            padding: 3px 0px 3px 5px;
+            font-size: 25px;
+            float: left;
+            width: 25%;
+            align-self: center;
+            text-align: left;
         }
 
         .three-col {
@@ -80,29 +107,6 @@
             padding-bottom: 15px;
         }
 
-        /* C1 - Navigation */
-        .left-nav {
-            list-style-type: none;
-        }
-
-        .left-nav>li {
-            border: 1px solid #f1f1f1;
-        }
-
-        .left-nav>li>a {
-            display: block;
-            padding: 15px 0px 15px 30px;
-            background-color: #f4f4f4;
-            text-decoration: none;
-            font-weight: bold;
-            transition-duration: 0.7s;
-
-        }
-
-        .left-nav>li>a:hover {
-            background-color: #8d8c8c;
-        }
-
         /* C2 - About Us */
         .c2 {
             padding: 20px 20%;
@@ -116,13 +120,26 @@
         }
 
         .c2>img {
-           margin: 0 250px;
+            margin: 0 250px;
         }
 
+        .title-container {
+            width: 400px;
+        }
+
+        .title:after {
+            content: "";
+            display: block;
+            width: 55%;
+            padding-top: 10px;
+            border-bottom: 1px solid rgb(211, 158, 51);
+        }
+
+
         .back-button {
-            padding: 7px 16px;
-            background-color: #F1f1f1;
-            float:right;
+            padding: 10px 16px;
+            background-color: #DFD9C1;
+            float: right;
             margin-bottom: 15px;
         }
 
@@ -134,37 +151,26 @@
 
 <body class="main-container-grid">
     <div class="r1 box-shadow">
-        <h2>Isavel Papa</h2>
+        <div>
+            <img src="./img/sm_favicon.png" class="top-logo">
+            <h2 class="top-name">Gatastico Pet Shop</h2>
+        </div>
     </div>
     <div class="r2 one-col">
         <div class="c1"></div>
         <div class="c2">
-                <a href="./index.html" class="back-button">Back to Home</a>
-            <h2>Company Information</h2>
+            <a href="./index.html" class="back-button">Back to Home</a>
+            <div class="title-container"><h2 class="title">Company Information</h2></div>
             <img class="box-shadow" src="./img/8.jpg">
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
-                into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
-                release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
-                software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
-                into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
-                release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
-                software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
-                into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
-                release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
-                software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <p>DISCLAIMER: For all intents and purposes, Gatastico Pet Shop is not a real company. It was formed by Isavel Papa for Lab 4 in April of 2019. The Gatastico logo was found on the internet and was chosen for its cuteness. </p>
+            <p>Gatastico always dreamed of being a pet shop. However, after stumbling across their logo, they decided to focus more on cats. Gatastico is in the business of connecting paw-rents to their purrr-fect chonky companion!</p>
+            <p>Originally, they wanted to be iconically ironic and sell dogs. However, after careful deliberation, cats were the way to go. The CEO (pictured) can personally attest to how important fostering a furry friend is. It drastically impacts the life of your new child and the parents themselves and changes it for the better. Gatastico is here to answer the call for chonky pets.</p>
+            <p class="center">Check out our site and connect with your lifelong chonky companion today!</p>
         </div>
         <div class="c3"></div>
     </div>
     <div class="r3 box-shadow">
-        Copyright © 2019. Created by Isavel Papa
+        Copyright © 2019. Created by Isavel Papa for Gatastico Pet Shop
     </div>
 </body>
 
