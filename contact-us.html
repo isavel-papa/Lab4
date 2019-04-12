@@ -3,7 +3,7 @@
 <html>
 
 <head>
-    <title>Assignment #4</title>
+    <title>Gatastico Pet Shop</title>
     <style>
         * {
             margin: 0px;
@@ -15,6 +15,8 @@
         body {
             height: 100vh;
             width: 100vw;
+            font-family: cursive;
+            overflow-x: hidden;
         }
 
         h2 {
@@ -38,25 +40,41 @@
         .r1,
         .r3 {
             display: grid;
-            background-color: #ccc;
-            padding: 1em;
+            background-color: #453716;
             align-items: center;
+            color: #FFFEFB;
+        }
+
+        .r2 {
+            background-color: #DFD9C1;
+            height: 100%;
         }
 
         .r3 {
             text-align: center;
+            padding: 1em;
         }
 
-        .r2 {
-            background-color: #f1f1f1;
-            height: 100%;
+        .top-logo {
+            height: 40px;
+            padding: 3px;
+            float: left;
         }
 
+        .top-name {
+            display: block;
+            padding: 3px 0px 3px 5px;
+            font-size: 25px;
+            float: left;
+            width: 25%;
+            align-self: center;
+            text-align: left;
+        }
 
         .two-col {
             display: grid;
             grid-template-columns: 2fr 8fr;
-            background-color: #FFF;
+            background-color: #DFD9C1;
             grid-column-gap: 1em;
         }
 
@@ -66,37 +84,37 @@
 
         .c1,
         .c3 {
-            background-color: #f4f4f4;
+            background-color: #E4B762;
         }
 
         .txt-center {
             text-align: center;
             margin: 15px auto 0px;
-            border-bottom: 1px solid #a8a7a7;
+            border-bottom: 1px solid rgb(211, 158, 51);
             padding-bottom: 15px;
         }
 
-        /* C1 - Navigation */
         .left-nav {
             list-style-type: none;
         }
 
         .left-nav>li {
-            border: 1px solid #f1f1f1;
+            border: 1px solid #E4B762;
         }
 
         .left-nav>li>a {
             display: block;
             padding: 15px 0px 15px 30px;
-            background-color: #f4f4f4;
             text-decoration: none;
             font-weight: bold;
             transition-duration: 0.7s;
-
+            color: #453716;
+            background-color: #DFD9C1;
         }
 
         .left-nav>li>a:hover {
-            background-color: #8d8c8c;
+            background-color: #453716;
+            color: #DFD9C1;
         }
 
         /* C2 - Contact Form */
@@ -129,20 +147,44 @@
             width: 91%;
             padding: 15px;
             margin: 5px;
+            color: rgb(211, 158, 51);
+        }
+
+        ::placeholder {
+            color: rgb(211, 158, 51);
+        }
+
+        .contact-input:hover,
+        .contact-input:focus {
+            outline: none;
+            border: 2px solid #453716;
+            border-radius: 4px;
         }
 
         .submit-button {
             padding: 10px 25px;
-            background-color: #ccc;
+            background-color: #453716;
+            color: #FFFEFB;
             float: right;
             margin-top: 12px;
+            font-family: cursive;
+            font-style: italic;
+            border-radius: 12px;
+            transition-duration: 0.1s;
+        }
+
+        .submit-button:hover {
+            background-color: rgb(211, 158, 51);
         }
     </style>
 </head>
 
 <body class="main-container-grid">
     <div class="r1 box-shadow">
-        <h2>Isavel Papa</h2>
+        <div>
+            <img src="./img/sm_favicon.png" class="top-logo">
+            <h2 class="top-name">Gatastico Pet Shop</h2>
+        </div>
     </div>
     <div class="r2 two-col">
         <div class="c1 box-shadow">
@@ -167,11 +209,11 @@
                 <button onclick="contact.goToHome()" type="submit" class="submit-button">Submit</button>
             </form>
         </div>
-        </div>
+    </div>
     </div>
 
     <div class="r3 box-shadow">
-        Copyright © 2019. Created by Isavel Papa
+        Copyright © 2019. Created by Isavel Papa for Gatastico Pet Shop
     </div>
     <script type="text/javascript" src="./js/contact.js"></script>
 </body>
