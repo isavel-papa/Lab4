@@ -88,6 +88,11 @@ h2 {
 
 
 /* C2 - About Us */
+
+.ceo {
+    width: 300px;
+    height:300px;
+}
 .c2 {
     padding: 20px 20%;
     height: 100%
