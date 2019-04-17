@@ -11,6 +11,7 @@ body {
     font-family: cursive;
     font-style: italic;
     overflow-x: hidden;
+ 
 }
 
 h2 {
@@ -28,7 +29,6 @@ h2 {
     display: grid;
     grid-template-rows: 1fr 13fr 1fr;
     grid-row-gap: 1em;
-    height: 100%
 }
 
 .r1,
@@ -47,6 +47,8 @@ h2 {
 .r2 {
     background-color: #DFD9C1;
     height: 100%;
+    min-height:0;
+    overflow:hidden;
 }
 
 
@@ -90,7 +92,7 @@ h2 {
 
 /* C2 - Login Form */
 .c2 {
-    padding: 2em;
+    /* padding: 2em; */
     margin: auto;
 }
 
@@ -105,13 +107,13 @@ h2 {
     margin-right: auto;
     display:block;
     width:98%;
-    height:300px;
+    height:250px;
 }
 
 /* Login Components */
 .login-form {
     width: 500px;
-    height: 500px;
+    /* height: 500px; */
     margin: 100px, auto;
 }
 

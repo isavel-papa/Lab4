@@ -5,144 +5,7 @@
 <head>
     <title>Gatastico Petshop</title>
     <link rel="icon" href="./img/sm_favicon.png">
-    <!-- <link rel="stylesheet" href="./css/style.css"> -->
-    <style>
-        * {
-            margin: 0px;
-            padding: 0px;
-            position: relative;
-        }
-
-        html,
-        body {
-            height: 100vh;
-            width: 100vw;
-            font-family: cursive;
-            overflow-x: hidden;
-        }
-
-        h2 {
-            font-size: 18px;
-            font-weight: bold;
-        }
-
-        .box-shadow {
-            -webkit-box-shadow: 0px 1px 9px -1px rgba(0, 0, 0, 0.75);
-            -moz-box-shadow: 0px 1px 9px -1px rgba(0, 0, 0, 0.75);
-            box-shadow: 0px 1px 9px -1px rgba(0, 0, 0, 0.75);
-        }
-
-        .main-container-grid {
-            display: grid;
-            grid-template-rows: 1fr 13fr 1fr;
-            grid-row-gap: 1em;
-            height: 100%
-        }
-
-        .r1,
-        .r3 {
-            display: grid;
-            background-color: #453716;
-            align-items: center;
-            color: #FFFEFB;
-            font-style: italic;
-        }
-
-        .r2 {
-            background-color: #DFD9C1;
-            height: 100%;
-        }
-
-        .r3 {
-            text-align: center;
-            padding: 1em;
-        }
-
-        .top-logo {
-            height: 40px;
-            padding: 3px;
-            float: left;
-        }
-
-        .top-name {
-            display: block;
-            padding: 3px 0px 3px 5px;
-            font-size: 25px;
-            float: left;
-            width: 25%;
-            align-self: center;
-            text-align: left;
-        }
-
-        .c1 {
-            min-width: 200px;
-        }
-
-        .c1,
-        .c3 {
-            background-color: #E4B762;
-        }
-
-        .three-col {
-            display: grid;
-            grid-template-columns: 2fr 8fr 3fr;
-            background-color: #DFD9C1;
-            grid-column-gap: 1em;
-        }
-
-        .txt-center {
-            text-align: center;
-            margin: 15px auto 0px;
-            border-bottom: 1px solid rgb(211, 158, 51);
-            padding-bottom: 15px;
-        }
-
-        /* C1 - Navigation */
-        .left-nav {
-            list-style-type: none;
-        }
-
-        .left-nav>li {
-            border: 1px solid #E4B762;
-        }
-
-        .left-nav>li>a {
-            display: block;
-            padding: 15px 0px 15px 30px;
-               text-decoration: none;
-            font-weight: bold;
-            transition-duration: 0.7s;
-            color: #453716;
-            background-color: #DFD9C1;
-        }
-
-        .left-nav>li>a:hover {
-            background-color: #453716;
-            color: #DFD9C1;
-        }
-
-        /* C2 - Product Grid */
-        .c2 {
-            display: grid;
-            /* Makes 4 cols, equal width */
-            grid-template-columns: repeat(4, 1fr);
-            /* auto rows makes it not take up the whole container */
-            grid-auto-rows: min-content;
-            grid-gap: 1em;
-        }
-
-        .h2-content {
-            grid-column: 1/5;
-            height: 22px;
-            width: 100%;
-        }
-
-        .c2>img {
-            width: 100%;
-            align-self: center;
-            max-height: 130px;
-        }
-    </style>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body class="main-container-grid">
@@ -167,27 +30,33 @@
         </div>
         <div class="c2">
             <h2 class="txt-center h2-content">Gallery</h2>
-            <img class="box-shadow" src="./img/1.jpg">
-            <img class="box-shadow" src="./img/2.jpg">
-            <img class="box-shadow" src="./img/3.jpg">
-            <img class="box-shadow" src="./img/4.jpg">
-            <img class="box-shadow" src="./img/5.jpg">
-            <img class="box-shadow" src="./img/6.jpg">
-            <img class="box-shadow" src="./img/7.jpg">
-            <img class="box-shadow" src="./img/8.jpg">
-            <img class="box-shadow" src="./img/9.jpg">
-            <img class="box-shadow" src="./img/10.jpg">
-            <img class="box-shadow" src="./img/11.jpg">
-            <img class="box-shadow" src="./img/12.jpg">
-            <img class="box-shadow" src="./img/13.jpg">
-            <img class="box-shadow" src="./img/14.jpg">
-            <img class="box-shadow" src="./img/15.jpg">
-            <img class="box-shadow" src="./img/16.jpg">
+            <img class="box-shadow grow" src="./img/1.jpg">
+            <img class="box-shadow grow" src="./img/2.jpg">
+            <img class="box-shadow grow" src="./img/3.jpg">
+            <img class="box-shadow grow" src="./img/4.jpg">
+            <img class="box-shadow grow" src="./img/5.jpg">
+            <img class="box-shadow grow" src="./img/6.jpg">
+            <img class="box-shadow grow" src="./img/7.jpg">
+            <img class="box-shadow grow" src="./img/8.jpg">
+            <img class="box-shadow grow" src="./img/9.jpg">
+            <img class="box-shadow grow" src="./img/10.jpg">
+            <img class="box-shadow grow" src="./img/11.jpg">
+            <img class="box-shadow grow" src="./img/12.jpg">
+            <img class="box-shadow grow" src="./img/13.jpg">
+            <img class="box-shadow grow" src="./img/14.jpg">
+            <img class="box-shadow grow" src="./img/15.jpg">
+            <img class="box-shadow grow" src="./img/16.jpg">
 
 
         </div>
         <div class="c3 box-shadow">
             <h2 class="txt-center">Recent Products</h2>
+            <ul class="rnav-list">
+                <li><img class="rnav-pic box-shadow grow" src="./img/1.jpg"></li>
+                <li><img class="rnav-pic box-shadow grow" src="./img/2.jpg"></li>
+                <li><img class="rnav-pic box-shadow grow" src="./img/3.jpg"></li>
+                <li><img class="rnav-pic box-shadow grow" src="./img/4.jpg"></li>
+            </ul>
         </div>
     </div>
 
