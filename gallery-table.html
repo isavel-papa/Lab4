@@ -5,204 +5,7 @@
 <head>
     <title>Gatastico Pet Shop</title>
     <link rel="icon" href="./img/sm_favicon.png">
-    <!-- <link rel="stylesheet" href="./css/gallery-table.css"> -->
-    <style>
-        * {
-            margin: 0px;
-            padding: 0px;
-            position: relative;
-        }
-
-        html,
-        body {
-            height: 100vh;
-            width: 100vw;
-            font-family: cursive;
-            overflow-x: hidden;
-        }
-
-        h2 {
-            font-size: 18px;
-            font-weight: bold;
-        }
-
-        .box-shadow {
-            -webkit-box-shadow: 0px 1px 9px -1px rgba(0, 0, 0, 0.75);
-            -moz-box-shadow: 0px 1px 9px -1px rgba(0, 0, 0, 0.75);
-            box-shadow: 0px 1px 9px -1px rgba(0, 0, 0, 0.75);
-        }
-
-        .main-container-grid {
-            display: grid;
-            grid-template-rows: 1fr 13fr 1fr;
-            grid-row-gap: 1em;
-        }
-
-        .r1,
-        .r3 {
-            display: grid;
-            background-color: #453716;
-            align-items: center;
-            color: #FFFEFB;
-            font-style: italic;
-        }
-
-        .r2 {
-            background-color: #f1f1f1;
-            min-height: 0;
-        }
-
-        .r3 {
-            text-align: center;
-            padding: 1em;
-        }
-
-        .top-logo {
-            height: 40px;
-            padding: 3px;
-            float: left;
-        }
-
-        .top-name {
-            display: block;
-            padding: 3px 0px 3px 5px;
-            font-size: 25px;
-            float: left;
-            width: 25%;
-            align-self: center;
-            text-align: left;
-        }
-
-        .c1 {
-            min-width: 200px;
-        }
-
-        .c1,
-        .c3 {
-            background-color: #E4B762;
-        }
-
-        .two-col {
-            display: grid;
-            grid-template-columns: 2fr 8fr;
-            background-color: #DFD9C1;
-            grid-column-gap: 1em;
-        }
-
-        /* C1 - Navigation */
-
-        .txt-center {
-            text-align: center;
-            margin: 15px auto 0px;
-            border-bottom: 1px solid rgb(211, 158, 51);
-            padding-bottom: 15px;
-        }
-
-        .left-nav {
-            list-style-type: none;
-        }
-
-        .left-nav>li {
-            border: 1px solid #E4B762;
-        }
-
-        .left-nav>li>a {
-            display: block;
-            padding: 15px 0px 15px 30px;
-            text-decoration: none;
-            font-weight: bold;
-            transition-duration: 0.7s;
-            color: #453716;
-            background-color: #DFD9C1;
-        }
-
-        .left-nav>li>a:hover {
-            background-color: #453716;
-            color: #DFD9C1;
-        }
-
-        /* C2 - Gallery Table */
-
-        .c2 {
-            overflow-y: scroll;
-            overflow-x: hidden;
-        }
-
-        .h2-content {
-            grid-column: 1/5;
-            height: 22px;
-            width: 150px;
-        }
-
-
-        .grid-button {
-            padding: 6px 12px;
-            background-color: #E4B762;
-            float: right;
-            color: #453716;
-        }
-
-        /* Gallery Table */
-        .gallery-table {
-            display: table;
-            width: 100%;
-            border-collapse:collapse;
-        }
-
-        .gallery-table thead {
-            font-size: 16px;
-            font-weight: 700;
-            padding-left: 5px;
-            background-color: #453716;
-            color:#FFFEFB;
-        }
-
-        .gallery-table td {
-            padding: 5px;
-        }
-
-        tr:nth-child(even) {
-            background-color: rgb(211, 204, 178);
-        }
-
-        .img-col {
-            width: 250px;
-        }
-
-        .col-80 {
-            width: 80px;
-        }
-
-        .buy-col {
-            width: 120px;
-            align-items: center;
-            text-align: center;
-            padding:0px;
-        }
-
-        .gallery-table>tbody>tr>td>img {
-            width: 150px;
-            height: 150px;
-            display: block;
-            margin: 5px auto;
-        }
-
-        .buy-now {
-            padding: 7px 16px;
-            background-color: #453716;
-            border-radius: 6px;
-            color: #FFF;
-            font-size: 16px;
-            transition-duration: 0.5s;
-            margin: 0 auto;
-            display: block;
-            outline: none;
-        }
-
-        .buy-now:hover {
-            background-color: #E4B762;
-        }
-    </style>
+    <link rel="stylesheet" href="./css/table.css">
 </head>
 
 <body class="main-container-grid">
@@ -270,7 +73,7 @@
                             <img class="box-shadow" src="./img/3.jpg">
                         </td>
                         <td>1003</td>
-                        <td>Name</td>
+                        <td>Chonkers</td>
                         <td>Exotic shorthair kitten. Loves food and cuddles</td>
                         <td>$299</td>
                         <td>
@@ -367,7 +170,7 @@
                         </td>
                         <td>1011</td>
                         <td>Your Majesty</td>
-                        <td>Beautiful ragdoll cat. Very majestic.</td>
+                        <td>Beautiful ragdoll cat. Very majestic</td>
                         <td>$499</td>
                         <td>
                             <button class="buy-now">Buy Now</button>

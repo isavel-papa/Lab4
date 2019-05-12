@@ -1,0 +1,170 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+}
+
+html,
+body {
+    height: 100vh;
+    width: 100vw;
+    font-family: cursive;
+    overflow-x: hidden;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.box-shadow {
+    -webkit-box-shadow: 0px 1px 9px -1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 1px 9px -1px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 1px 9px -1px rgba(0, 0, 0, 0.75);
+}
+
+.main-container-grid {
+    display: grid;
+    grid-template-rows: 1fr 13fr 1fr;
+    grid-row-gap: 1em;
+    height: 100%
+}
+
+.r1,
+.r3 {
+    display: grid;
+    background-color: #453716;
+    align-items: center;
+    color: #FFFEFB;
+    font-style: italic;
+}
+
+.r2 {
+    background-color: #f1f1f1;
+    min-height: 0;
+}
+
+.r3 {
+    text-align: center;
+    padding: 1em;
+}
+
+.top-logo {
+    height: 40px;
+    padding: 3px;
+    float: left;
+}
+
+.top-name {
+    display: block;
+    padding: 3px 0px 3px 5px;
+    font-size: 25px;
+    float: left;
+    width: 25%;
+    align-self: center;
+    text-align: left;
+}
+
+.c1 {
+    min-width: 200px;
+}
+
+.c1,
+.c3 {
+    background-color: #E4B762;
+}
+
+.two-col {
+    display: grid;
+    grid-template-columns: 2fr 8fr;
+    background-color: #DFD9C1;
+    grid-column-gap: 1em;
+}
+
+.center {
+    text-align: center;
+}
+
+.price {
+    text-align: center;
+    margin: 0px;
+    border-bottom: 1px solid rgb(211, 158, 51);
+    padding-bottom: 5px;
+}
+/* C1 - Navigation */
+
+.txt-center {
+    text-align: center;
+    margin: 15px auto 0px;
+    border-bottom: 1px solid rgb(211, 158, 51);
+    padding-bottom: 15px;
+}
+
+.left-nav {
+    list-style-type: none;
+}
+
+.left-nav>li {
+    border: 1px solid #E4B762;
+}
+
+.left-nav>li>a {
+    display: block;
+    padding: 15px 0px 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.7s;
+    color: #453716;
+    background-color: #DFD9C1;
+}
+
+.left-nav>li>a:hover {
+    background-color: #453716;
+    color: #DFD9C1;
+}
+
+/* C2 - Product Grid */
+.c2 {
+    display: grid;
+    /* Makes 4 cols, equal width */
+    grid-template-columns: repeat(4, 1fr);
+    /* auto rows makes it not take up the whole container */
+    grid-auto-rows: min-content;
+    grid-gap: 1em;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.contain {
+    object-fit: contain;
+}
+
+.h2-content {
+    grid-column: 1/5;
+    height: 22px;
+    width: 75%;
+}
+
+.c2>img {
+    width: 90%;
+    align-self: center;
+    max-height: 130px;
+    /* object-fit: cover; */
+}
+
+.c2-first-row {
+    /* Span across top row */
+    grid-column: 1/5;
+}
+
+
+.grid-button {
+    padding: 6px 12px;
+    background-color: #E4B762;
+    float: right;
+    color: #453716;
+    /* display: block; */
+    margin-top: 15px;
+    width: 9.25%;
+    text-align: right;
+}
